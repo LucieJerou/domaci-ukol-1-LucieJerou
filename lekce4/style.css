@@ -1,0 +1,79 @@
+* {box-sizing: border-box;}
+
+.hlavni-menu {
+    border: solid 1px black;
+}
+.prvni-sekce {
+    border: solid 1px black;
+    background-color: aquamarine;
+}
+.druha-sekce {
+    border: solid 1px black;
+    background-color: cornflowerblue;
+}
+.treti-sekce {
+    border: solid 1px black;
+    background-color: gold;
+}
+.cistic {
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1rem;
+}
+/* 
+    .prvni-sekce{
+    float: left;
+    width: 30%;
+}
+
+.druha-sekce{
+    float: right;
+    width: 69%;
+}
+
+nav a::after{
+    content: " text_sem_text_tam";
+} 
+*/
+
+/* main{
+    position: relative;
+}
+
+.prvni-sekce{
+    position: absolute;
+    width: 30%;
+    top:0px;
+    left:0px;
+    z-index: 100;
+}
+
+absolutni pozice vzhledem k prvnimu nadrazenemu
+
+.druha-sekce{
+    position: absolute;
+    width: 30%;
+    top:0px;
+    left:10px;
+    z-index: 10;
+}
+
+.treti-sekce{
+    position: absolute;
+    width: 30%;
+    top:0px;
+    left:20px;
+} 
+*/
+
+

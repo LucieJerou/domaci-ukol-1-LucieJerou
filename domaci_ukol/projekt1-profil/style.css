@@ -1,0 +1,101 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+
+
+body {
+    background-color: #bdc3c7;
+}
+
+.profil {
+    width: 250px;
+}
+
+.odkazy {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #31363b;
+}
+
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.obsah {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:#31363b;
+    color: #bec3c1;
+    padding: 10%;
+}
+
+.hlavicka {
+    position: relative;
+}
+
+.logo {
+    background-color: #b92e81;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 100;
+    margin-top: -10%;
+    left: 70%;
+}
+
+.foto {
+    width: 100%;
+    display: block;
+}
+
+.odkazy {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+li {
+    font-size: 1rem;
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid #bec3c1;
+    text-align: center;
+}
+
+/* potrebuju udelat, aby byl cely radek jako odkaz, tzv. "klikaci" */
+
+li a {
+    color: #bec3c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li.portfolio {
+    width: 100%;
+}
+
+li.twitter:hover {
+    background-color: #1da1f2;
+}
+
+li.facebook:hover {
+    background-color: #3b5998;
+}
+
+li.portfolio:hover {
+    background-color: #e74c3c;
+}
+

@@ -1,0 +1,47 @@
+*
+{
+    box-sizing: border-box;
+}
+
+h1 {
+color: rgb(31, 28, 48);
+background-color: blanchedalmond;
+font-size: 3rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: rgba(255, 235, 205, 0.658);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center
+}
+
+img {
+    border-width: 2px;
+    border-color: black;
+    border-radius: 100%;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+}
+
+.nadpis {
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+.obrazek {
+    display: inline-block;
+}
+
+
+.obsah {
+
+
+}
+
+.konec {
+
+
+}
