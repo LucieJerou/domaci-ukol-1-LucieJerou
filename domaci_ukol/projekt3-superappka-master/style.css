@@ -1,0 +1,122 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+.ikona {
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #48418e;
+}
+
+.header-brand {
+    font-weight: 700;
+}
+
+.header-hlavni {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.horni-navigace ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.horni-navigace li {
+	margin-left: 80px;
+}
+
+.obsah {
+    background-image: url('images/pozadi.jpg'), url('images/telefon.png');
+    height: 500px;
+    background-color: #e5e5e5;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.obsah h1 {
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 400; 
+}
+
+.obsah h2 {
+    font-weight: 300;
+}
+
+.tlacitko {
+    padding: 20px;
+    background-color: transparent;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.dolni-obsah {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h3 {
+    color: #48418e;
+}
+
+.box p {
+    color: #25133d;
+}
+
+footer {
+    background-color: #48418e;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
