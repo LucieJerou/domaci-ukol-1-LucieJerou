@@ -47,6 +47,7 @@ a {
 .header-brand {
     font-weight: 700;
 }
+/* a tady fakt nevím, jak to udělat, aby to bylo vedle sebe v rovině :-( */
 
 .header-hlavni {
     display: flex;
@@ -65,26 +66,40 @@ a {
 }
 
 .obsah {
-    background-image: url('images/pozadi.jpg'), url('images/telefon.png');
+    background-image: url('images/pozadi.jpg');
     height: 500px;
     background-color: #e5e5e5;
     background-position: center;
     background-size: cover;
     color: white;
+    position: relative;
 }
 
 .obsah h1 {
-    font-size: 40px;
+    font-size: 90px;
     margin-top: 0;
     font-weight: 400; 
+    padding-top: 50px;
 }
 
 .obsah h2 {
     font-weight: 300;
+    font-size: 40px;
+    width: 50%;
+}
+
+.obsah img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .tlacitko {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
     background-color: transparent;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
@@ -92,6 +107,10 @@ a {
     font-weight: 700;
     border-radius: 8px;
     border-color: white;
+}
+
+.tlacitko:hover {
+    background-color: #48418e;
 }
 
 .dolni-obsah {
@@ -119,4 +138,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main > * {
+    padding-left: 40px;
 }
