@@ -46,13 +46,14 @@ a {
 
 .header-brand {
     font-weight: 700;
+    display: flex;
+    align-self: center;
+    padding-left: 40px;
 }
-/* a tady fakt nevím, jak to udělat, aby to bylo vedle sebe v rovině :-( */
 
 .header-hlavni {
     display: flex;
     justify-content: left;
-    padding: 10px;
 }
 
 .horni-navigace ul {
@@ -78,6 +79,7 @@ a {
 .obsah h1 {
     font-size: 90px;
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400; 
     padding-top: 50px;
 }
@@ -95,16 +97,16 @@ a {
 }
 
 .tlacitko {
-    padding-top: 10px;
+    padding: 20px 35px;
+    /* padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px; */
     margin-right: 20px;
     background-color: transparent;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
-    font-weight: 700;
     border-radius: 8px;
     border-color: white;
 }
