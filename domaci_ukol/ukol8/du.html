@@ -10,7 +10,8 @@
     <style>
         img {
             display: block;
-            transition: ease 1s
+            transition: ease 1s;
+            /* transition: transform 2s; */
         }
     </style>
 </head>
@@ -28,9 +29,12 @@
         {
             var cerveny = $("#cerveny");
             var modry = $("#modry");
+            //var modryPosition = 0;
 
             modry.on("click", function () {
-
+                
+                //modryPosition = modryPosition + 50;
+                //modry.css("transform", "translateX(" + modryPosition + "px)");
                 var poziceModreho = parseInt(modry.css("margin-left"));
                 modry.css("margin-left", poziceModreho + 300);
 
