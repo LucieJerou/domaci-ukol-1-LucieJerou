@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soutez aut</title>
+
+    <style>
+        img {
+            display: block;
+            transition: ease 1s
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="modry" src="car1.png">
+        <img id="cerveny" src="car2.png">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () 
+        {
+            var cerveny = $("#cerveny");
+            var modry = $("#modry");
+
+            modry.on("click", function () {
+
+                var poziceModreho = parseInt(modry.css("margin-left"));
+                modry.css("margin-left", poziceModreho + 300);
+
+            });
+
+             cerveny.on("click", function () {
+
+                var poziceCerveneho = parseInt(cerveny.css("margin-left"));
+                cerveny.css("margin-left", poziceCerveneho + 200);
+
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
