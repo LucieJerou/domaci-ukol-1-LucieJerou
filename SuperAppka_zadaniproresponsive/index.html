@@ -18,7 +18,13 @@
 
             <div class="brand">SUPER APPKA</div>
 
-            <nav>
+            <div id="menu" class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="nav">
                 <ul>
                     <li><a href="#">Úžasný design</a></li>
                     <li><a href="#">Boží funkce</a></li>
@@ -81,7 +87,28 @@
 
 
     </div><!-- konec .obal -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+    <script>
+        $(function () {
+            var hamburger = $("#menu")
+            var menu = $("#nav")
+
+
+                hamburger.on("click", function(e) {
+                    menu.toggle()
+                    e.stopPropagation()
+                })
+
+                menu.on("click", function(e) {
+                    e.stopPropagation()
+                })
+
+                $(document).on("click", function() {
+                menu.hide()
+                })
+        }) 
+    </script>
 </body>
 
 </html>
